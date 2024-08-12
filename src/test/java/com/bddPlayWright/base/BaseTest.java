@@ -29,7 +29,7 @@ public class BaseTest {
                 case "chromium":
                 default:
                     browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
-                            .setHeadless(isHeadless).setArgs(Arrays.asList(new String[]{"--disable-blink-features=AutomationControlled"})));
+                            .setHeadless(isHeadless)); //.setArgs(Arrays.asList(new String[]{"--disable-blink-features=AutomationControlled"})));
                     break;
             }
 
